@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洗墨 ｜ 墨砌當代營建</title>
+    <style>
+        /* 墨砌 1.0 全局美學鋼筋 */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #F5F2EB;
+            /* 手工宣紙微觀顆粒肌理 */
+            background-image: radial-gradient(#111111 0.5px, transparent 0.5px), radial-gradient(#111111 0.5px, #F5F2EB 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            font-family: "PingFang HK", "Noto Serif CJK TC", "Songti TC", "Baskerville", serif;
+            -webkit-font-smoothing: antialiased;
+            color: #2A2A2A;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 8rem 2rem;
+        }
+
+        .scroll {
+            max-width: 650px;
+            width: 100%;
+            position: relative;
+        }
+
+        /* 頂部時辰 */
+        .header-time {
+            font-size: 0.8rem;
+            color: #888888;
+            letter-spacing: 0.2em;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-weight: 300;
+        }
+
+        /* 故事流佈局（大呼吸度） */
+        .story-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem; /* 讓停頓成為可見的空白 */
+        }
+
+        /* 核心敘事（濃墨） */
+        p.narration {
+            font-size: 1.15rem;
+            line-height: 2.2;
+            letter-spacing: 0.08em;
+            text-align: justify;
+        }
+
+        /* 物理環境/動作（淡墨清線） */
+        p.env {
+            font-size: 0.9rem;
+            color: #888888;
+            letter-spacing: 0.05em;
+            font-style: italic;
+            padding-left: 1rem;
+            border-left: 1px solid #DCD6CD;
+            margin: 0.5rem 0;
+        }
+
+        /* 對話引文（重墨） */
+        .dialogue {
+            color: #111111;
+            font-weight: 600;
+            position: relative;
+            padding: 0 0.2em;
+        }
+
+        /* 靈魂Token（焦墨高光） */
+        .soul-token {
+            color: #111111;
+            font-weight: 700;
+            font-size: 1.25rem;
+            border-bottom: 1px solid #111111;
+            padding-bottom: 2px;
+        }
+
+        /* 終局宣告（全頁核心） */
+        .manifesto {
+            margin-top: 3rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #111111;
+            text-align: center;
+            letter-spacing: 0.2em;
+            line-height: 2.4;
+            padding: 2rem 0;
+            border-top: 1px double #DCD6CD;
+            border-bottom: 1px double #DCD6CD;
+        }
+
+        /* 頁尾閉合與朱砂印章 */
+        .footer-seal {
+            margin-top: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: #888888;
+            letter-spacing: 0.1em;
+        }
+
+        .seal-svg {
+            width: 36px;
+            height: 36px;
+            fill: #C9372F;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll">
+        <div class="header-time">時辰：驚蟄 ｜ 閉門洗墨</div>
+
+        <div class="story-flow">
+            
+            <p class="narration">舊書齋的窗紙破了。</p>
+            
+            <p class="env">雨絲滲進來，打濕案上殘稿。</p>
+            
+            <p class="narration">
+                漬痕裡嵌著舊淚，是他當年<span class="soul-token">洗墨</span>時滴的。
+            </p>
+            
+            <p class="narration">
+                店主說，文人閉門三年。每日寅時起，研墨至日落。墨塊用盡三百斤，紙用盡千張。
+            </p>
+            
+            <p class="dialogue">「他說血口噴出的臟，要用心墨洗淨。」</p>
+            
+            <p class="env">翻開《洗墨記》。字字工整，如僧抄經。</p>
+            
+            <p class="narration">
+                記中寫清風真意，寫翻書雅趣，寫洗墨心得：<br>
+                <span class="dialogue" style="font-weight: 400; color: #555555;">「墨有五色，心有千結。洗墨如洗心，一層層剝。」</span>
+            </p>
+            
+            <p class="env">文人洗稿時，常對鏡自觀。鏡中影分兩半。</p>
+            
+            <p class="narration">
+                一半是血口噴人前的他，眼裡有孤魂的空。<br>
+                一半是洗墨後的他，眼裡有禪房窗紙透出的光。
+            </p>
+            
+            <p class="env">第三年驚蟄，他遇同窗。那人正在教童子讀《詩經》。</p>
+            
+            <p class="dialogue">「關關雎鳩，在河之洲。」<span style="font-size: 0.9rem; color: #888888; font-weight: 300;">童聲朗朗。</span></p>
+            
+            <p class="narration">
+                「你聽。」同窗指書，<span class="dialogue">「詩無惡意，讀詩亦無惡意。」</span>
+            </p>
+            
+            <p class="env">文人想起《清風賦》原句：「清風不識字，何必亂翻書。」</p>
+            
+            <p class="narration">確無譏諷，只有書齋夜讀的雅趣。</p>
+            
+            <p class="dialogue">「我血口噴你，是因妒你文采。」<span style="font-weight: 400; color: #2A2A2A;">同窗說，</span>「也因怕你超過我。」</p>
+            
+            <p class="dialogue">「可你沒超過，我妒什麼？」<span style="font-weight: 400; color: #2A2A2A;">文人反問。</span></p>
+            
+            <p class="dialogue">「妒你敢寫，我不敢寫。」<span style="font-weight: 400; color: #2A2A2A;">同窗苦笑，</span>「血口是心魔的嘴。」</p>
+            
+            <p class="narration">
+                「我終於敢重讀《清風賦》了。」他說，「可人都笑我『痴』。」
+            </p>
+            
+            <p class="env">殘稿在手。漬痕淡如云，像弓影照散的疑。</p>
+
+            <div class="manifesto">
+                原來野心不必洗白，<br>
+                被血口噴過仍寫就夠了。
+            </div>
+            
+            <p class="env">風起。殘稿飛走，帶起一陣墨香。</p>
+            
+            <p class="narration" style="text-align: center; font-size: 1.05rem; color: #555555;">
+                香裡有《清風賦》的真意，有洗墨的堅持。
+            </p>
+            
+            <p class="env" style="border-left: none; text-align: center; padding-left: 0;">墨影掠過屋檐，如清風翻書。</p>
+
+        </div>
+
+        <div class="footer-seal">
+            <span>殘稿飛落 ｜ 墨影掠過屋檐，如清風翻書。</span>
+            <svg class="seal-svg" viewBox="0 0 100 100">
+                <rect x="12" y="12" width="76" height="76" fill="none" stroke="#C9372F" stroke-width="6"/>
+                <path d="M30 30 L30 70 M50 30 L50 70 M70 30 L70 70 M30 45 L70 45" stroke="#C9372F" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
