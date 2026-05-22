@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoQi Gallery</title>
+  <style>
+    :root { --ink-heavy:#111; --ink-rich:#2A2A2A; --ink-medium:#555; --ink-light:#888; --ink-pale:#DCD6CD; --canvas:#F5F2EB; --font:"PingFang HK","Noto Serif CJK TC","Songti TC","Baskerville",serif; }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--font);color:var(--ink-rich);background:var(--canvas);line-height:1.8;letter-spacing:0.03em;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4rem 2rem;position:relative}
+    body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-repeat:repeat;background-size:256px 256px}
+    .hall-title{color:var(--ink-heavy);font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0.2em;line-height:1.1;font-weight:600;margin-bottom:1rem;text-align:center}
+    .hall-subtitle{color:var(--ink-light);font-size:0.875rem;letter-spacing:0.15em;margin-bottom:6rem;text-align:center}
+    .divider{width:60px;height:1px;background:var(--ink-pale);margin:0 auto 6rem auto}
+    .exhibits{display:flex;flex-direction:column;gap:3rem;width:100%;max-width:480px}
+    .exhibit-card{display:block;text-decoration:none;border:1px solid var(--ink-pale);padding:2.5rem 2rem;transition:border-color 0.3s,box-shadow 0.3s;position:relative;background:transparent}
+    .exhibit-card:hover{border-color:var(--ink-medium);box-shadow:3px 3px 0px var(--ink-pale)}
+    .exhibit-card .num{color:var(--ink-pale);font-size:0.75rem;letter-spacing:0.2em;margin-bottom:1rem;display:block}
+    .exhibit-card .title{color:var(--ink-heavy);font-size:1.5rem;letter-spacing:0.1em;line-height:1.3;font-weight:500;margin-bottom:0.75rem}
+    .exhibit-card .desc{color:var(--ink-medium);font-size:0.9375rem;line-height:1.6}
+    .exhibit-card .meta{color:var(--ink-light);font-size:0.75rem;letter-spacing:0.1em;margin-top:1.5rem}
+    .exhibit-card .arrow{position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);opacity:0.25;transition:opacity 0.3s,right 0.3s}
+    .exhibit-card:hover .arrow{opacity:0.6;right:1rem}
+    footer{margin-top:6rem;color:var(--ink-light);font-size:0.75rem;letter-spacing:0.1em;text-align:center}
+    @media(max-width:768px){.exhibits{max-width:100%}}
+  </style>
+</head>
+<body>
+  <h1 class="hall-title">墨砌館藏</h1>
+  <p class="hall-subtitle">網頁空間營建 · 當代視覺長卷</p>
+  <div class="divider"></div>
+  <div class="exhibits">
+    <a href="./fadai.html" class="exhibit-card">
+      <span class="num">展覽 001</span>
+      <div class="title">發呆誌</div>
+      <div class="desc">1920年上海紡織廠作息表的考古<br/>宣紙底色 · 棗樹貫卷 · 沉思長卷</div>
+      <div class="meta">Q015 營建圖志測繪風</div>
+      <svg class="arrow" width="20" height="12" viewBox="0 0 20 12" fill="none" stroke="#111" stroke-width="1"><line x1="0" y1="6" x2="18" y2="6"/><polyline points="14,2 18,6 14,10"/></svg>
+    </a>
+    <a href="./zhuang.html" class="exhibit-card">
+      <span class="num">展覽 002</span>
+      <div class="title">樁</div>
+      <div class="desc">民國武林新生系列短篇小說<br/>焦墨木刻版畫 · 棗樹傳承 · 六章長卷</div>
+      <div class="meta">Q015-變體 北平武林木刻志</div>
+      <svg class="arrow" width="20" height="12" viewBox="0 0 20 12" fill="none" stroke="#111" stroke-width="1"><line x1="0" y1="6" x2="18" y2="6"/><polyline points="14,2 18,6 14,10"/></svg>
+    </a>
+    <a href="./youth.html" class="exhibit-card">
+      <span class="num">展覽 003</span>
+      <div class="title">青年靈魂圖譜</div>
+      <div class="desc">用流行語的針腳縫合起來的、一具仍在呼吸的躯壳<br/>六座精神孤島 · 浮世碎影 · 無盡之海</div>
+      <div class="meta">Q024 浮世碎影</div>
+      <svg class="arrow" width="20" height="12" viewBox="0 0 20 12" fill="none" stroke="#111" stroke-width="1"><line x1="0" y1="6" x2="18" y2="6"/><polyline points="14,2 18,6 14,10"/></svg>
+    </a>
+  </div>
+  <footer>墨砌 1.0 · 網頁裝置藝術</footer>
+</body>
+</html>
